@@ -1,0 +1,19 @@
+<section id="{{ include.topic }}" class="sec sec-alt">
+    <div class="container">
+        <div class="row">
+            <div class=".d-sm-none .d-md-block col-md-2 col-lg-5"></div>
+            <div class="col-sm-12 col-md-10 col-lg-7 card">
+                <div class="card-body">
+                    <i class="section-icon fa-solid {{ include.icon }}"></i>
+                    <h2 class="card-title">{{ include.topic }}</h2>
+                    <p class="card-text text-justify">{{ include.text }}</p>
+                    {% if include.link %}
+                    <a href="{{ include.link }}" target="_blank" role="button" class="btn btn-secondary">
+                        <span class="fa-brands fa-github"></span> Visit Project on GitHub
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

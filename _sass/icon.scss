@@ -1,0 +1,24 @@
+@keyframes icon-move-left {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-15px, 0px) rotate(-10deg);
+    opacity: 0.8;
+  }
+}
+
+.section-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 4rem;
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .card:hover .section-icon {
+    animation: icon-move-left 0.15s ease-out 0s 2 alternate;
+  }
+}

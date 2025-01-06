@@ -1,0 +1,83 @@
+# Site configuration
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Collections
+# 6. Jekyll collections settings
+# 7. Site settings
+# 8. Site favicons & manifest icons
+# 9. Site navigation
+
+# 1. Files excluded from Jekyll builds
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-cache
+
+# 2. Installed Gems
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-commonmark
+  - jekyll-include-cache
+  - jemoji
+  - jekyll-scholar
+
+# 3. Gem settings
+
+# 4. Jekyll settings
+sass:
+  style: compressed # Style compression
+  sass_dir: _sass
+permalink: none  # Permalink style (/YYYY/MM/DD/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: Europe/Amsterdam # Timezone for blog posts and alike
+
+# 5. Collections
+collections:
+  publications:
+    output: true
+
+# 6. Jekyll collections settings
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page # Set the default layout for pages
+
+# 7. Site settings
+encoding: utf-8 # Make sure the encoding is right
+lang: en-GB # Set the site language
+title: "Heerko Groefsema" # Site name or title, also used in jekyll-seo-tag
+logo: "/assets/img/Favicon.png" # Site logo, also used in jekyll-seo-tag
+description: "PhD in Computer Science. Heerko is an assistant professor at the Distributed Systems group of the University of Groningen, the Netherlands. In addition, Heerko is a (remote) visiting researcher at the Business Processes and Legal Informatics Team, Data61, Commonwealth Scientific and Industrial Research Organisation (CSIRO), Brisbane." # Site description and default description, also used in jekyll-seo-tag
+#url: "https://hgroefsema.nl" # Site url, also used in jekyll-seo-tag
+baseurl: ""
+repo: "https://github.com/heerkog/heerkog.github.io"
+header: "Heerko Groefsema" # Header displayed above the menu, different from title because that should be overriden
+# disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
+# date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
+# google_analytics: ""
+# google_analytics_anonymize_ip: ""
+# service_worker: false # Will turn off the service worker if set to false
+# short_name: "Al" # The web application short name, defaults to the site title
+css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+
+# 8. Site favicons & manifest icons
+favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
+  64: '/assets/img/Favicon.png'
+
+# Load custom fonts from fonts.google.com etc
+#
+# TIP: Try to keep the number of urls as low to reduce the performance cost
+#      If multiple fonts can be requested in a single url opt for this
+fonts:
+  preconnect_urls:
+    - https://fonts.gstatic.com
+  font_urls:
+    - https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap
