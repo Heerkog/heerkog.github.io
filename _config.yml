@@ -81,3 +81,16 @@ fonts:
     - https://fonts.gstatic.com
   font_urls:
     - https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap
+
+
+# Jekyll Scholar
+#
+# BUG: group_by currently crashes
+scholar:
+  style: dependent/ieee-transactions-on-software-engineering
+  bibliography: /*.bib
+  sort_by: year, type, month
+  order: descending, descending, descending
+  type_order: [book, phdthesis, proceedings, booklet, inbook, article, incollection, inproceedings, techreport, manual, masterthesis, unpublished, misc]
+  bibtex_filters: latex
+  bibliography_template: bib
