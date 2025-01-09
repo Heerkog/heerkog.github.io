@@ -24,7 +24,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-commonmark
   - jekyll-include-cache
-  - jemoji
   - jekyll-scholar
 
 # 3. Gem settings
@@ -38,9 +37,6 @@ excerpt_separator: <!-- more --> # Marks end of excerpt in posts
 timezone: Europe/Amsterdam # Timezone for blog posts and alike
 
 # 5. Collections
-collections:
-  publications:
-    output: true
 
 # 6. Jekyll collections settings
 defaults:
