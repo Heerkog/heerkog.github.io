@@ -38,6 +38,8 @@ jobs:
           ruby-version: '2.7.2' # Not needed with a .ruby-version file
       - name: Install Bundler
         run: gem install bundler -v 1.17.3
+      - name: Install gems
+        run: bundle _1.17.3_ install
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
