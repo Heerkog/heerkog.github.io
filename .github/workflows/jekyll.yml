@@ -38,8 +38,13 @@ jobs:
           ruby-version: '2.7.2' # Not needed with a .ruby-version file
       - name: Install latest Bundler
         run: |
-          gem install bundler --no-document
-          gem update --system --no-document
+          if [[ "$(ruby -v | awk '{print $2}')" == 2.7.8* ]]; then
+            gem install bundler -v 2.4.22 --no-document
+            gem update --system 3.4.22 --no-document
+          else
+            gem install bundler --no-document
+            gem update --system --no-document
+          fi
           bundle config set without 'tools benchmarks docs'
       - name: Setup Pages
         id: pages
