@@ -52,7 +52,7 @@ lang: en-GB # Set the site language
 title: "Heerko Groefsema" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/img/Favicon.png" # Site logo, also used in jekyll-seo-tag
 description: "PhD in Computer Science. Heerko is an assistant professor at the Distributed Systems group of the University of Groningen, the Netherlands. In addition, Heerko is a (remote) visiting researcher at the Business Processes and Legal Informatics Team, Data61, Commonwealth Scientific and Industrial Research Organisation (CSIRO), Brisbane." # Site description and default description, also used in jekyll-seo-tag
-#url: "https://hgroefsema.nl" # Site url, also used in jekyll-seo-tag
+url: "https://hgroefsema.nl" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repository: "heerkog/heerkog.github.io"
 header: "Heerko Groefsema" # Header displayed above the menu, different from title because that should be overriden
@@ -85,8 +85,3 @@ fonts:
 scholar:
   style: dependent/ieee-transactions-on-software-engineering
   bibliography: heerko_groefsema.bib
-  sort_by: year, type, month
-  order: descending, descending, descending
-  type_order: [book, phdthesis, proceedings, booklet, inbook, article, incollection, inproceedings, techreport, manual, masterthesis, unpublished, misc]
-  bibtex_filters: latex
-  bibliography_template: bib
