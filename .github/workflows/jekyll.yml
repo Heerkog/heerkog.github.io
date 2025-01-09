@@ -1,3 +1,4 @@
+
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
@@ -35,17 +36,8 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@0a29871fe2b0200a17a4497bae54fe5df0d973aa # v1.115.3
         with:
-          ruby-version: '2.7.2' # Not needed with a .ruby-version file
-      - name: Install latest Bundler
-        run: |
-          if [[ "$(ruby -v | awk '{print $2}')" == 2.7.8* ]]; then
-            gem install bundler -v 2.4.22 --no-document
-            gem update --system 3.4.22 --no-document
-          else
-            gem install bundler --no-document
-            gem update --system --no-document
-          fi
-          bundle config set without 'tools benchmarks docs'
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
