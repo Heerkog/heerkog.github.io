@@ -36,10 +36,11 @@ jobs:
         uses: ruby/setup-ruby@0a29871fe2b0200a17a4497bae54fe5df0d973aa # v1.115.3
         with:
           ruby-version: '2.7.2' # Not needed with a .ruby-version file
-      - name: Install Bundler
-        run: gem install bundler -v 1.17.3
-      - name: Install gems
-        run: bundle _1.17.3_ install
+      - name: Install latest Bundler
+        run: |
+          gem install bundler --no-document
+          gem update --system --no-document
+          bundle config set without 'tools benchmarks docs'
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
