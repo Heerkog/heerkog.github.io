@@ -2,13 +2,13 @@
 
 source "https://rubygems.org"
 gem "github-pages", '~> 231', group: :jekyll_plugins
+gem "jekyll-include-cache", group: :jekyll_plugins
 
 group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem 'jekyll-redirect-from'
   gem 'jekyll-commonmark'
   gem 'jekyll-include-cache'
-  gem 'jekyll-scholar'
 end
 gem "webrick", "~> 1.8"
 
