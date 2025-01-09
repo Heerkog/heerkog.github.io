@@ -58,7 +58,7 @@ logo: "/assets/img/Favicon.png" # Site logo, also used in jekyll-seo-tag
 description: "PhD in Computer Science. Heerko is an assistant professor at the Distributed Systems group of the University of Groningen, the Netherlands. In addition, Heerko is a (remote) visiting researcher at the Business Processes and Legal Informatics Team, Data61, Commonwealth Scientific and Industrial Research Organisation (CSIRO), Brisbane." # Site description and default description, also used in jekyll-seo-tag
 #url: "https://hgroefsema.nl" # Site url, also used in jekyll-seo-tag
 baseurl: ""
-repository: "https://github.com/heerkog/heerkog.github.io"
+repository: "heerkog/heerkog.github.io"
 header: "Heerko Groefsema" # Header displayed above the menu, different from title because that should be overriden
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
