@@ -26,6 +26,9 @@ plugins:
   - jekyll-include-cache
   - jekyll-scholar
 
+whitelist:
+  - jekyll-scholar
+
 # 3. Gem settings
 
 # 4. Jekyll settings
