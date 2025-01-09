@@ -84,7 +84,7 @@ fonts:
 # BUG: group_by currently crashes
 scholar:
   style: dependent/ieee-transactions-on-software-engineering
-  bibliography: _bibliography/heerko_groefsema.bib
+  bibliography: heerko_groefsema.bib
   sort_by: year, type, month
   order: descending, descending, descending
   type_order: [book, phdthesis, proceedings, booklet, inbook, article, incollection, inproceedings, techreport, manual, masterthesis, unpublished, misc]
