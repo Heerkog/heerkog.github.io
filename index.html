@@ -3,7 +3,6 @@ layout: default
 title: Heerko Groefsema
 ---
 
-{{ page.title }}
 <!-- Profile Section -->
 <section id="profile" class="sec sec-main">
     <div class="container">
@@ -33,3 +32,5 @@ title: Heerko Groefsema
 {% include double-column-section-right.html topic="Workflows" icon="fa-diagram-project" text="To prevent regulatory compliance violations, we research tools that automatically check whether workflows of organizations comply with legislation. Workflows, or business processes, are collaborations between actors that achieve specific value-added goals. Organisations use workflows to implement control and coordination in case management systems (e.g., in insurance, banking, or hospitals) or in (smart) manufacturing. As legislation is being introduced to workflows, there is an emerging need for automated regulatory compliance verification of the models that describe these mechanisms. Our tools are able to formally prove whether workflow models adhere to regulations." %}
 {% include double-column-section-left.html topic="Audits" icon="fa-magnifying-glass" text="To detect regulatory compliance violations, we research tools that automatically check whether workflow executions adhere to legislation. When automated, executions of workflows, resulting in a specific execution instance and case, are recorded in event logs. Event logs contain recordings of important event occurrences in the execution of information systems. Our tools are able to formally prove whether current and past workflow executions captured in event logs adhere to regulations." %}
 {% include double-column-section-right.html topic="Process families" icon="fa-code-compare" text="To allow for adaptation, flexibility and variability of workflows, we develop tools that automatically check whether workflows are part of the same family of processes. That is, several variants of the same workflow may exist due to, e.g., mergers, customer tailored services, diverse market segments, or distinct legislation across borders. By introducing the concept of process families, we allow organizations to deviate from their prescribed processes using normal process model notation and automatically verify if such a deviation is allowed." %}
+
+{% bibliography %}
