@@ -1,8 +1,13 @@
 .section-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
   font-size: 4rem;
   opacity: 1;
 }
 
-.sec > .h1 {
-  float:right;
+.sec > h1 {
+  position: absolute;
+  top: 0;
+  left: 1.2rem;
 }
