@@ -1,8 +1,16 @@
-.sec div {
-  scale: 0.7;
+.sec-main {
+  scale: 1;
+  opacity: 1;
+  animation: scroll-fade-out linear forwards;
+  animation-timeline: view() 250px;
+  animation-range: exit;
+}
+
+.sec-alt div {
+  scale: 0.8;
   opacity: 0;
-  animation: scroll-fade linear forwards;
-  animation-timeline: view();
+  animation: scroll-fade-in linear forwards;
+  animation-timeline: view() 250px;
   animation-range: entry;
 }
 
@@ -11,6 +19,6 @@
     to { scale: 1; opacity: 1; }
   }
   @keyframes scroll-fade-out {
-    to { scale: 1; opacity: 1; }
+    to { scale: 0.8; opacity: 0; }
   }
 }
