@@ -1,0 +1,13 @@
+.sec div {
+  scale: 0.7;
+  opacity: 0;
+  animation: scroll-fade linear forwards;
+  animation-timeline: view();
+  animation-range: entry;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes scroll-fade {
+    to { scale: 1; opacity: 1; }
+  }
+}
