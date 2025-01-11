@@ -2,16 +2,16 @@
   scale: 1;
   opacity: 1;
   animation: scroll-fade-out linear forwards;
-  animation-timeline: view() 250px;
-  animation-range: exit;
+  animation-timeline: view();
+  animation-range: exit 250px;
 }
 
 .sec-alt div {
   scale: 0.8;
   opacity: 0;
   animation: scroll-fade-in linear forwards;
-  animation-timeline: view() 250px;
-  animation-range: entry;
+  animation-timeline: view();
+  animation-range: entry 250px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
