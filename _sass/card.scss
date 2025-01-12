@@ -17,10 +17,10 @@
   padding: 10px;
   text-align: center;
   vertical-align: middle;
+  background-color: #3e8e41;
 }
 
 .green {
-  background-color: #3e8e41;
 }
 
 .red {
@@ -48,7 +48,7 @@
   opacity: 1;
 }
 
-.section-card::before {
+.section-card:before {
   content:"";
   position: absolute;
   inset: -5px;
