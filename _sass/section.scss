@@ -11,7 +11,7 @@
   opacity: 0;
   animation: scroll-fade-in linear forwards;
   animation-timeline: view();
-  animation-range: entry 0%;
+  animation-range: entry 150px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
