@@ -42,7 +42,7 @@
 }
 
 .section-icon {
-  font-size: 16rem;
+  font-size: 10rem;
   opacity: 1;
 }
 
@@ -50,6 +50,7 @@
   content:"";
   position: absolute;
   inset: 0;
+  border-radius: 25px;
   transform: translate3d(0,0,-1px);
   background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
   filter: blur(10px);
