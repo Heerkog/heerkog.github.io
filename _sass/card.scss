@@ -62,7 +62,7 @@
   content:"";
   position: absolute;
   z-index: -2;
-  inset: -2px;
+  inset: 5px;
   transform: translate(0px, 0px);
   border-radius: inherit;
   background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
@@ -73,7 +73,7 @@
    content:"";
    position: absolute;
    z-index: -2;
-   inset: -5px;
+   inset: 5px;
    transform: translate(0px, 0px);
    border-radius: inherit;
    background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
@@ -84,7 +84,7 @@
   content: "";
   position: absolute;
   z-index: -2;
-  inset: -5px;
+  inset: 5px;
   transform: translate(0px, 0px);
   border-radius: inherit;
   background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
@@ -95,7 +95,7 @@
   content: "";
   position: absolute;
   z-index: -2;
-  inset: -5px;
+  inset: 5px;
   transform: translate(0px, 0px);
   border-radius: inherit;
   background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
@@ -106,7 +106,7 @@
   content: "";
   position: absolute;
   z-index: -2;
-  inset: -5px;
+  inset: 5px;
   transform: translate(0px, 0px);
   border-radius: inherit;
   background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
@@ -117,7 +117,7 @@
   content: "";
   position: absolute;
   z-index: -2;
-  inset: -5px;
+  inset: 5px;
   transform: translate(0px, 0px);
   border-radius: inherit;
   background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
