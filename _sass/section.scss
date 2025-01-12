@@ -14,10 +14,6 @@
   animation-range: entry 0%;
 }
 
-.sec div div {
-  align-content: space-between;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   @keyframes scroll-fade-in {
     to { translate: 0 0; opacity: 1; }
