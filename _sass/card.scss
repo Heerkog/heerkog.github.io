@@ -62,10 +62,11 @@
   content:"";
   position: absolute;
   z-index: -2;
+  inset: -10px;
   transform: translate(0px, 0px);
   border-radius: inherit;
   background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-  filter: blur(3px);
+  filter: blur(1px);
 }
 
 .red::before {
