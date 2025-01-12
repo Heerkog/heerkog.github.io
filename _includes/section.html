@@ -1,7 +1,7 @@
 <section id="{{ include.topic }}" class="sec sec-alt">
     <div class="container">
         <div class="row">
-            <div class="col-sm-4 section-card" style="background: {{ include.color }};">
+            <div class="col-sm-4 section-card {{ include.color }}">
                 <i class="section-icon fa-solid {{ include.icon }}"></i>
                 <h2>{{ include.topic }}</h2>
             </div>
@@ -11,8 +11,8 @@
                 <a href="{{ include.link }}" target="_blank" role="button" class="btn btn-secondary">
                     <span class="fa-brands fa-github"></span> Visit Project on GitHub
                 </a>
+                {% endif %}
             </div>
         </div>
     </div>
 </section>
-{% endif %}
