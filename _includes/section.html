@@ -3,9 +3,9 @@
         <div class="row">
             <div class="col-sm-4">
                 <i class="section-icon fa-solid {{ include.icon }}"></i>
-                <h2>{{ include.topic }}</h2>
             </div>
             <div class="col-sm-8">
+                <h2>{{ include.topic }}</h2>
                 <p class="text-justify">{{ include.text }}</p>
                 {% if include.link %}
                 <a href="{{ include.link }}" target="_blank" role="button" class="btn btn-secondary">
