@@ -42,6 +42,7 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - run: jekyll clean
       - run: bundle update
       - run: bundle show jekyll-scholar
       - name: Build with Jekyll
