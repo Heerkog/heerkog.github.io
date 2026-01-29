@@ -19,14 +19,6 @@ exclude:
 
 # 2. Installed Gems
 plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-redirect-from
-  - jekyll-commonmark
-  - jekyll-include-cache
-  - jekyll-scholar
-
-whitelist:
   - jekyll-scholar
 
 # 3. Gem settings
